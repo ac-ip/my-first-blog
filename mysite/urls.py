@@ -16,7 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+"""blogサイトのURL
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('blog.urls')),
+]
+"""
+
+"""testsiteのURL"""
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('testsite.urls')),
 ]
